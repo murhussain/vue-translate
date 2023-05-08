@@ -1,7 +1,13 @@
 <template>
   <main>
-    <h1>Welcome to the Vue 3 I18n tutorial!</h1>
-    <p>This tutorial was brought to you by Lokalise.</p>
+    <h1>{{ $t("home.header") }}</h1>
+    <p>{{ $t("home.created_by") }}</p>
     <p>This page has been visited 30 times.</p>
   </main>
 </template>
+
+<script setup>
+// import { useI18n } from "vue-i18n";
+
+// const { t } = useI18n();
+</script>
