@@ -8,7 +8,7 @@ const messages = {
     },
     home: {
       header: "Welcome to the Vue 3 I18n tutorial!",
-      created_by: "This tutorial was brought to you by Lokalise."
+      created_by: "This tutorial was brought to you by {company}."
     },
     about: {
       header: "About us"
@@ -22,7 +22,7 @@ const messages = {
     },
     home: {
       header: "Добро пожаловать в руководство Vue 3 I18n!",
-      created_by: "Это руководство создано для вас компанией Lokalise."
+      created_by: "Это руководство создано для вас компанией {company}."
     },
     about: {
       header: "О нас"
