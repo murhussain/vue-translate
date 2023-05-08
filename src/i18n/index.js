@@ -1,5 +1,7 @@
 import { createI18n } from "vue-i18n";
 import pluralRules from "./rules/pluralization" // <--- add this 
+import numberFormats from "./rules/numbers.js" // <--- add this
+import datetimeFormats from "./rules/datetime.js" // <--- add this
 
 const messages = {
   en: {
@@ -13,7 +15,8 @@ const messages = {
       num_visits: "This page hasn't been visited :( | This page has been visited {n} time | This page has been visited {n} times"
     },
     about: {
-      header: "About us"
+      header: "About us",
+      donations: "Donations raised: {donations}"
     }
   },
 
@@ -28,7 +31,8 @@ const messages = {
       num_visits: "Страницу не посещали :( | Страницу посетили {n} раз | Страницу посетили {n} раза | Страницу посетили {n} раз"
     },
     about: {
-      header: "О нас"
+      header: "О нас",
+      donations: "Пожертвований собрано: {donations}"
     }
   }
 }
@@ -39,5 +43,7 @@ export default createI18n({
   legacy: false, // <--- 3
   globalInjection: true,
   messages,
-  pluralRules // <--- add this
+  pluralRules, // <--- add this
+  numberFormats,  // <--- add this
+  datetimeFormats // <--- add this
 })
